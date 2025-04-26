@@ -1,0 +1,29 @@
+# Required sections
+
+# Name of the challenge
+# If not provided it is inferred from folder name
+
+name: "Multiplayer"
+description: "You and a friend want to play Fireboy and Watergirl in the Forest Temple, but you both live quite far away. You both want to meet up roughly halfway by distance, you want to meet at a place that has public computers, and you want to meet up at a place that shares the name of the street where you both live. What’s the address of where that could be?\n\nFlag format: `UMASS{Address as on Google Maps}`, e.g. `UMASS{650 N Pleasant St, Amherst, MA 01003}` for the Integrative Learning Center at UMass."
+
+# Flags specify answers that your challenge use. You must provide at least one.
+flags:
+    - content: "UMASS{1531 W North Ave, Baltimore, MD 21217}" # required field for every flag
+      type: "static" # must be static or regex
+      data: "case_insensitive" # additional data
+
+# Hints are used to give players a way to buy or have suggestions. They are not required but can be nice.
+# hints:
+
+tags:
+    - easy
+    - osint
+
+value: 500
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100
+
+
+

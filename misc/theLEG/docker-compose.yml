@@ -1,0 +1,6 @@
+services:
+  leg:
+    build: .
+    ports:
+      - "12001:5000"
+    restart: always

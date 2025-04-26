@@ -1,0 +1,17 @@
+description: "I don't know how much they expect us to lift in this hundred degrees heat...  (Note: might take a few seconds to connect, sage takes a while)"
+flags: 
+  - content: "UMASS{a_hundred_degrees_makes_lifting_harder}"
+
+name: "Hot and Heavy"
+
+tags: 
+  - crypto 
+  - hard
+  
+connection_info: nc ctf.umasscybersec.org 7001
+
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100
+

@@ -1,0 +1,19 @@
+services: 
+  app:
+    ports:
+      - 80:80
+    volumes: 
+      - ./uploads:/app/users
+    build: app
+    environment: 
+      POSTGRES_PASSWORD: Fl4shG4m3s4r3s04ws30m3!1!1
+      APP_SECRET: Th1s_1s_a_r3a11y_s3cr3t_s3cr3t_th4t_1s_n0t_34sy_t0_gu3ss
+    restart: always
+  db:
+    build: db
+    # image: postgres
+    environment: 
+      POSTGRES_PASSWORD: Fl4shG4m3s4r3s04ws30m3!1!1
+    # volumes:
+    #   - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    restart: always

@@ -1,0 +1,16 @@
+description: "With how much time I spent figuring LFSRs out, it would be weird if I didn't make a challenge about them."
+flags:
+  - content: "UMASS{lsfr_with_modulus_is_still_likely_very_very_extremely_insecure}"
+
+name: "Lazy Streamer"
+
+tags:
+  - crypto
+  - medium
+
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100
+
+

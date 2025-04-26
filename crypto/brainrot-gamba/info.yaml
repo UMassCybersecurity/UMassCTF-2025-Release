@@ -1,0 +1,19 @@
+description: "gamba gamba gamba gamba I cannot stop the gamba please just let me gamba (good music to vibe with the challenge: https://www.youtube.com/watch?v=u6DMfRoX9-M) (just to be clear, this has nothing to do with the challenge itself, it just fits the theme)"
+flags: 
+  - content: "UMASS{call-1-800-GAMBLER-if-you're-in-the-US-and-need-help}"
+
+name: "Brainrot Gamba"
+
+tags: 
+  - crypto 
+  - hard
+  
+connection_info: nc ctf.umasscybersec.org 7002
+
+value: 500
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100
+
+

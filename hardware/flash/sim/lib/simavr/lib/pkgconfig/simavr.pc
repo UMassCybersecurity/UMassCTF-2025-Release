@@ -1,0 +1,10 @@
+prefix=/home/omp/Development/UMass/Cybersec/UMassInternalCTF2024/challenges/hardware/led-blink/code/libs/simavr
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: simavr
+Description: Atmel(tm) AVR 8 bits simulator
+Version: v1.7
+Cflags: -I${includedir}/simavr
+Libs: -L${libdir} -lsimavr -lelf

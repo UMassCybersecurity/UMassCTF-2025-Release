@@ -1,0 +1,6 @@
+services:
+  fact:
+    build: .
+    ports:
+      - "9005:4444"
+    restart: always

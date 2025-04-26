@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./header.ejs') %>
+  <body>
+    <div class="d-flex flex-column">
+      <div class="d-flex justify-content-center my-4">
+      <h1>Register</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+    <form action="/register" method="POST">
+      <input type="text" id="username" name="username" />
+      <button id="register" value="register" >register</button>
+    </form>
+    </div>
+  </div>
+  </body>
+  <script src="/static/background.js"></script>
+</html>

@@ -1,0 +1,17 @@
+name: "No Updates"
+description: |
+  I don't believe in updating my computer, it just takes so long!  Besides, no one could ever hack me, I use good passwords!
+
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100
+
+flags:
+  - content: UMASS{n07_ag41n_d4mn_y0u_m3t4spl017}
+
+tags:
+  - forensics
+  - ir
+  - easy
+

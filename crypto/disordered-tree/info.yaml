@@ -1,0 +1,14 @@
+description: "The (key distribution) tree is speaking to me. This is not good. Please send help."
+flags: 
+  - content: "UMASS{perhaps_dont_be_using_commutative_encryption}"
+
+name: "Disordered Tree"
+
+tags: 
+  - crypto 
+  - easy
+
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100

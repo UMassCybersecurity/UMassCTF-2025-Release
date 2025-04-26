@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block header %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>{{game_name}}</h1>
+
+    <h2>Game Code</h2>
+    <pre class="game_code">
+        <code>
+{{code | b64decode}}</code>
+    </pre>
+
+    <a href="/game/{{username}}/{{game_name}}/edit">Edit Code</a>
+    <a href="/game/{{username}}/{{game_name}}/test">Test Game</a>
+</div>
+{% endblock %}

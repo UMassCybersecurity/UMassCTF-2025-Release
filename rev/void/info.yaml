@@ -1,0 +1,25 @@
+description: |
+  It's just you and me.
+
+  `SHA256: 45bb5f7188f9c3723b5d32b9a45ad48eae97966e350857d5a2162da25122b36c`
+
+  Small note: Be aware that some antivirus programs might flag this binary. If you plan to run it, make sure you have Visual C++ Redistributable installed :)
+
+  [Visual C++ latest (aka.ms)](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+flags: 
+  - content: "UMASS{0DD1y_H4nD_0ptiMi2eD_X8664_pr0gr4M_by_m3_;>_Soy4jGPHr3g}"
+    type: "static"
+    data: "case_sensitive"
+
+name: "the void"
+value: 500
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100
+
+
+tags: 
+  - rev
+  - windows
+  - hard

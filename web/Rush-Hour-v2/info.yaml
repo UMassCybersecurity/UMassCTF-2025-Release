@@ -1,0 +1,18 @@
+name: "Rush Hour v2"
+description: "The closers are upon us! Do you have what it takes to meet their demands?"
+
+flags:
+  - content: "UMASS{k@hUnA_mY_b310v3D1!!1!}"
+
+tags:
+  - web
+  - hard(?)
+
+connection_info: http://ctf.umasscybersec.org:5008
+
+value: 500
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 10
+

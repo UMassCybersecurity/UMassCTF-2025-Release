@@ -1,0 +1,16 @@
+description: "Papa's Pizzaria uses a top secret method of communicating. Legend has it that this code is woven into the way they make burgers too. Can you crack the BuRGerCode?" 
+flags: 
+  - content: "UMASS{gr4y_c0d3_s01v3s_burg3r5_0f_h4n01}"
+
+name: "BuRGerCode"
+
+tags: 
+  - crypto 
+  - easy
+  
+connection_info: nc ctf.umasscybersec.org 7000
+
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100

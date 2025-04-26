@@ -1,0 +1,18 @@
+name: RF Fan
+
+description: I took this recording from my fan remote. It contains 7 binary messages. Demodulate and decode the signal, then submit the message that should come after the 7th in binary. For example if the messages were `00, 11, 00, 11, 00, 11, 00`, you would submit UMASS{11}.
+
+flags:
+  - content: "UMASS{0{1,2}10100010011111110111000001000110?}"
+    type: "regex" # must be static or regex
+    data: "case_sensitive" # additional data
+
+value: 500
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100
+
+tags:
+  - hard
+  - rf

@@ -1,0 +1,10 @@
+services:
+  fcsign:
+    build: .
+    volumes:
+      - ./src:/src
+    working_dir: /src
+    command: python server.py
+    ports:
+      - 10004:8765
+    restart: always

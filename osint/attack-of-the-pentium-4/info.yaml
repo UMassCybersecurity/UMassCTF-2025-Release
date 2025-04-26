@@ -1,0 +1,25 @@
+# Required sections
+
+# Name of the challenge
+# If not provided it is inferred from folder name
+
+name: "Attack of the Pentium 4"
+description: "You really want to play Run 3, but your poor Pentium 4 isn't fast enough! You've heard there's a computer shop worthy of thunderous praise in this building, but you need an expert opinion on their services first. If a computer is good enough to work on games, it should be good enough to play them. It’s been rumored that someone who works on games once purchased a computer from here. Can you find their first game?\n\nFlag format: `UMASS{name of the game in English}`, for example `UMASS{Elden Ring}`"
+
+# Flags specify answers that your challenge use. You must provide at least one.
+flags:
+    - content: "UMASS{Otogi 2: Immortal Warriors}" # required field for every flag
+      type: "static" # must be static or regex
+      data: "case_insensitive" # additional data
+
+# Hints are used to give players a way to buy or have suggestions. They are not required but can be nice.
+# hints:
+
+tags:
+    - medium
+    - osint
+
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./header.ejs') %>
+    <body>
+        <div class="container">
+          <h1 id="username"><%= stats.username %></h1>
+            <p>
+              Cash earned: <%= stats.cash %>
+            </p>
+            <p>
+              <form action="/report/<%= stats.username %>" method="post">
+              <button id="report" value="<%= stats.username %>">report <%= stats.username %></button>
+        </form>
+            </p>
+            <h3>chat log for <%= stats.username %></h3>
+            <p id="chatlog">
+
+            </p>
+        </div>
+    </body>
+    <script src="/static/stats.js"></script>
+    <script src="/static/background.js"></script>
+</html>

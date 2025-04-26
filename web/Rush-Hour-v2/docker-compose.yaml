@@ -1,0 +1,14 @@
+# Note: The flag will be less than 56 characters! I'm not that cruel.
+services:
+  backend:
+    build: app
+    ports:
+      - 5008:3000
+    environment:
+      REDIS_URL: redis://cache-storage:6379
+      REDIS_HOST: cache-storage
+      FLAG: UMASS{k@hUnA_mY_b310v3D1!!1!}
+    restart: always
+  cache-storage:
+    image: redis:latest
+    restart: always

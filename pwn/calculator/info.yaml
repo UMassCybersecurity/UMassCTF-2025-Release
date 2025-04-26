@@ -1,0 +1,14 @@
+description: I made this cool calculator that can preform operations super fast in parallel using threads. Can you try it out and give me some feedback?
+
+flags:
+  - content: UMASS{n0_tHr3Ad_sAf3TY!!}
+
+tags:
+    - medium
+    
+connection_info: nc ctf.umasscybersec.org 9000
+
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100

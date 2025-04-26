@@ -1,0 +1,16 @@
+description: "oops, i leaked a bit more than half of the xor of the primes" 
+flags: 
+  - content: "UMASS{i_will_make_a_solve_script}"
+
+name: "xorsa"
+
+value: 500
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100
+
+tags: 
+  - crypto 
+  - medium
+  

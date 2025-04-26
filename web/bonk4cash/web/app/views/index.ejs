@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./header.ejs') %>
+  <body>
+    <div class="d-flex justify-content-center">
+      <div class="d-flex flex-column justify-content-center w-100 h-100">
+        <div
+          class="d-flex justify-content-center mx-auto border border-black"
+          style="width: 100vh; height: 50vh"
+        >
+        <canvas id="game"></canvas>
+      </div>
+        <div class="d-flex justify-content-center px-5 w-100 my-2">
+          <div class="w-50 d-flex">
+            <div style="margin-left:auto;margin-right:5vh;">
+              <p>Arrow keys and space to play</p>
+              <p>Your stats: <a href="/stats/<%= self %>"><%= self %></a></p>
+              <p>
+                Your opponent:
+                <a href="/stats/<%= opponent %>"><%= opponent %></a>
+              </p>
+            </div>
+          </div>
+          <div class="w-50">
+            <label for="chat">Chat: </label><br /><input
+              type="text"
+              name="chatinput"
+              id="chatinput"
+            />
+            <button id="chatbutton" value="send">send</button>
+            <div id="chat" style="max-height: 20vh; overflow: hidden"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/static/index.js"></script>
+</html>

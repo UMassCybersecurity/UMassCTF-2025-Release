@@ -1,0 +1,26 @@
+name: Hidden in Flash
+
+flags:
+  - content: UMASS{asT3r0iDs!1}
+
+description: |
+    My friend gave me a tiny square chip and said it had a flash player game with a secret in it. I figured out the chip is an CAT24C64B EEPROM module and hooked it up to an Arduino UNO R3. Can you help me write some code to read the game and find the secret?
+    
+    Server Details:
+      * Accepts ELF binaries up to 64 KiB
+      * Max runtime of 5 seconds (based on clock cycles)
+      * Max UART output of 4 kiB
+
+hints:
+  - content: I wonder what file format this is?
+  - content: I think I saw a program that could open this but I need to get the file off the chip.
+  - content: I wonder what metadata this file has?
+
+connection_info: python client.py <FIRMWARE> 
+tags:
+  - easy
+
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100

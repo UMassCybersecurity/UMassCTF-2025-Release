@@ -1,0 +1,17 @@
+<head>
+  <link rel="stylesheet" href="/static/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/bootstrap.bundle.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bonk4Cash</title>
+</head>
+<header class="d-flex justify-content-between py-3 px-5 w-100">
+<h1 style="margin-right: auto;">Bonk4Cash</h1>
+<ul class="nav nav-pills">
+    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+    <li class="nav-item"><a href="/register" class="nav-link">Register</a></li>
+    <li class="nav-item"><a href="#" onclick="(async () => {await fetch('/logout', {method: 'post', credentials: 'include'});document.location='/register'})()" class="nav-link">Logout</a></li>
+    <li class="nav-item"><a href="#" onclick="(async () => {if(document.cookie.includes('no_balls')){document.cookie = 'no_balls=; Max-Age=-99999999;';}else{document.cookie='no_balls=you_wont;'}})()" class="nav-link">No Balls</a></li>
+</ul>
+</header>
+<canvas id="canvas" style="position:fixed; width:100%; height:100%; z-index:-1"></canvas>

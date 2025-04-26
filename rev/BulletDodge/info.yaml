@@ -1,0 +1,22 @@
+description: |
+  This game seems unbeatable but I need to get 1000000 to win... maybe there's a secret easter egg to beat the bullets?
+
+  `SHA256: ea25d350272089f3a7cbfdd180b86a8b1c37185a3ed1a05e67665fc54534ced6`
+
+flags: 
+  - content: "UMASS{R4N_FR[0o]M_B[1iI]LL_[0o]7}"
+    type: "regex"
+    data: "case_sensitive"
+
+name: "Bullet Dodge"
+value: 500
+
+tags: 
+  - rev
+  - unity
+  - medium
+
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100

@@ -1,0 +1,28 @@
+# This file outlines a good start configuration that you can use for most challenges
+# NOTE: This is NOT a full specification. Check full-info.yaml for more fields and options.
+
+# Required section
+# You MUST have these fields defined in your info.yaml 
+
+description: I created a really cool game editor for your browser, but I'm still working on it so you can only sign up for now.
+
+# Flags specify answers that your challenge use. You must provide at least one but can have more than one.
+flags:
+    - content: "UMASS{CR0SS_th3_fl4sH_g4m3_t0_1nj3ct_Pyth0n!1!!11}"
+
+# Optional settings
+# Still good to have but not required
+
+# Name of the challenge
+# If not provided it is inferred from path to challenge
+name: Flash Game Studio
+
+tags:
+    - web
+    - medium
+
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100
+

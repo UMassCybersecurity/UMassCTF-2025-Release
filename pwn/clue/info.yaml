@@ -1,0 +1,18 @@
+description: "I recreated Clue from scratch in order to learn C. Can you play my game and solve the mystery? Debugging should be done in either a Docker container using Ubuntu 20.04 or on a local Ubuntu 20.04 machine/VM."
+flags: 
+  - content: "UMASS{i_h4v3_n0_clu3_h0w_t0_t4k3_us3r_1nput}"
+
+name: "Clue"
+
+tags:
+  - hard
+  - pwn
+
+connection_info: nc ctf.umasscybersec.org 9001  
+
+
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100
+

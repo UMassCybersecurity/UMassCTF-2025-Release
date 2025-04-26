@@ -1,0 +1,30 @@
+name: "Ghost in the Leg"
+description: |
+  TheLEG™ just got updated with a brand new UI and speculative execution extension!  Surely no one can read data from kernel space...
+
+  The flag is at address 0x800000
+
+  Source for this challenge can be found at: http://bit.ly/43UdRzz
+
+  It is highly recommended to try solutions locally before running them on remote, it will be easier to debug and MUCH faster.
+
+flags:
+  - content: UMASS{3v3ry_d4y_1s_l3g_day_4t_um4SS_C7F}
+
+tags:
+  - architecture
+  - pwn
+  - misc
+  - hard
+
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100
+connection_info: http://ctf.umasscybersec.org:12001/
+
+
+
+
+
+

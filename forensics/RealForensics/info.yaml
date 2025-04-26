@@ -1,0 +1,22 @@
+name: "Real Forensics"
+description: |
+  I've noticed one of my business competitors suddenly knows about some top secret company data.  The files were only stored on my desktop, so I think they may have hacked me!
+
+  I've provided a pcap of around the time the data got leaked.  Can you figure out what happened?
+
+  Note - this chall contains malware and requires some rev.
+
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100
+
+flags:
+  - content: UMASS{f0r3ns1cs_1s_4lw4ys_b3tt3r_w1th_s0m3_r3v}
+
+tags:
+  - forensics
+  - incident response
+  - rev
+  - hard
+

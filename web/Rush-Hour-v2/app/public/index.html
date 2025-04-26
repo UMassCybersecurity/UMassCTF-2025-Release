@@ -1,0 +1,81 @@
+<meta
+  http-equiv="Content-Security-Policy"
+  content="defaul-src 'none';
+  connect-src 'none';" />
+
+<link href="https://fonts.cdnfonts.com/css/dokyo" rel="stylesheet">
+
+<!--CSS is kinda scuffed but idc-->
+<style>
+    body {
+        font-family: 'Dokyo', sans-serif;
+        background-image: url('../images/PapasFreezeria001.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        text-align: left;
+        color: black ;
+    }
+
+    iframe {
+        display: block;
+        border-style:none;
+    }
+
+    #left {
+        margin: 0;
+        padding: 0;
+        background-color: #f9dbdd;
+        float: left;
+        padding: 10px;
+    }
+
+    #right {
+        float: right;
+        width: 200px;
+        height: 400px;
+        background-image: url('../images/notes.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <script>
+        async function clearNotes(){
+            document.location="/clear";
+        }
+    </script>
+    <div id = "left">
+        <h3> Rush Hour</h3>
+        Customers are starting to stream in!.<br>
+        Quickly, take notes on their orders!<br />
+
+        If you want Papa Louie to look at your notes,<br> visit /report/{uid} and he will visit!<br>
+        <h2> Create a new note! </h2>
+
+        <form id="note-taker" action="/create" method="POST">
+            <label for="note">Enter your note content.</label>
+            <br>
+            <input name="note" id= "note" value="Your Note" maxlength="16">
+        </form>
+
+        <h2>Clear your notes!</h2>
+        <button onclick="clearNotes()">Clear Notes</button>
+        <br>
+        <div id="customers"> </div>
+        <br>
+
+        <iframe width="220" height="220"
+            src="../images/xqc-papas-freezeria.gif" name="papa_gif" id="papa_gif">
+        </iframe>
+    </div>
+
+    <div id="right">
+        <h1>
+            Your Notes:
+        </h1>
+        <div id="notes"> </div>
+    </div>
+</body>

@@ -1,0 +1,18 @@
+description: "I forgot to organize my encrypted flags for this challenge! Can you find the odd one out? I could have sworn it was a different color..."
+
+flags: 
+  - content: "UMASS{qrongratulations}"
+
+name: "Odd One Out"
+
+hints:
+  - content: "Not all solvers will work on this. If you get stuck, try a different way!"
+  - content: "The oddoneout challenge is multilayer! You'll know you have the right one if it looks like a real word."
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100
+
+tags:
+  - easy
+  - steganography

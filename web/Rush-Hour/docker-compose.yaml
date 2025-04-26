@@ -1,0 +1,13 @@
+services:
+  backend:
+    build: app
+    ports:
+      - 5001:3000
+    environment:
+      REDIS_URL: redis://cache-storage:6379
+      REDIS_HOST: cache-storage
+      FLAG: UMASS{tH3_cl053Rz_@re_n0_m@tcH}
+    restart: always
+  cache-storage:
+    image: redis:latest
+    restart: always

@@ -1,0 +1,6 @@
+services:
+  hidden-in-flash:
+    build: .
+    ports:
+      - 10003:4444
+    restart: always

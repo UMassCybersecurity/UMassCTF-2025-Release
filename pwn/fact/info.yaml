@@ -1,0 +1,14 @@
+description: Another challenge already used one of my old projects with unsafe code, so I thought I might as well write some intentionally unsafe code.
+name: "Fact"
+flags:
+  - content: UMASS{CS_230_students_hate_this_one_little_trick}
+
+tags:
+    - easy
+    
+connection_info: nc ctf.umasscybersec.org 9005
+
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100

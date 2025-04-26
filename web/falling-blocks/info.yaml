@@ -1,0 +1,14 @@
+name: "Falling Blocks"
+description: "One of the most iconic games has made a come back as the Falling Blocks game! However, there are 3 unbeatable players dominating top 3 at all times. Can you hack the game and make it to top 3?"
+
+flags: 
+  - content: "UMASS{F@lLiNgH@rD_0N_w3bS0cK3ts!437}"
+
+tags: 
+  - web
+  - easy
+
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100

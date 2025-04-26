@@ -1,0 +1,30 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - Flash Game Studio</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<!-- Best font ever. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<!-- End best font ever. -->
+<nav>
+    <ul class="navbar">
+        <img height=75px onclick="document.location=`/`"  onmouseout="this.src=`/static/home_button.png`" onmouseover="this.src=`/static/home_button_hover.png`" src="/static/home_button.png">
+        <img height=75px onclick="document.location=`/dev`"  onmouseout="this.src=`/static/dev_button.png`" onmouseover="this.src=`/static/dev_button_hover.png`" src="/static/dev_button.png">
+        <img height=75px onclick="document.location=`/profile`"  onmouseout="this.src=`/static/profile_button.png`" onmouseover="this.src=`/static/profile_button_hover.png`" src="/static/profile_button.png">
+        <img height=75px onclick="document.location=`/login`"  onmouseout="this.src=`/static/login_button.png`" onmouseover="this.src=`/static/login_button_hover.png`" src="/static/login_button.png">
+        <img height=75px onclick="document.location=`/logout`"  onmouseout="this.src=`/static/logout_button.png`" onmouseover="this.src=`/static/logout_button_hover.png`" src="/static/logout_button.png">
+      </ul> 
+</nav>
+<script>
+  const params = new URLSearchParams(document.location.search);
+  const message = params.get("message");
+  if(message){
+    alert(message)
+  }
+</script>
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% block content %}{% endblock %}
+</section>

@@ -1,0 +1,6 @@
+services:
+  clue:
+    build: .
+    ports:
+      - "9001:4444"
+    restart: always

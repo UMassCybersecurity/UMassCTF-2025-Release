@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Scoreboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #00ffea;
+      text-align: center;
+      padding: 40px;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 40px;
+      color: #ff4081;
+      text-shadow: 0 0 5px #ff4081, 0 0 10px #ff4081;
+    }
+
+    .scoreboard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .team {
+      background: #222;
+      border: 4px solid #00ffea;
+      border-radius: 12px;
+      padding: 20px 40px;
+      width: 300px;
+      box-shadow: 0 0 20px #00ffea;
+    }
+
+    .team strong {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #ffff00;
+    }
+
+    .team-score {
+      font-size: 20px;
+      color: #ffffff;
+    }
+    .game-button {
+        display: inline-block;
+        text-decoration: none;
+        font-family: 'Press Start 2P', cursive;
+        background-color: #ff4081;
+        color: #fff;
+        padding: 10px 20px;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        box-shadow: 0 0 10px #ff4081;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .game-button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px #ff4081;
+    }
+  </style>
+</head>
+<body>
+  <a href="/game" class="game-button">Game</a>
+  <h1>🎮 Game Scoreboard 🎮</h1>
+  <div class="scoreboard" id="scoreboard"></div>
+
+  <script>
+    async function loadScores() {
+      const res = await fetch('/api/scores');
+      const scores = await res.json();
+      const scoreboard = document.getElementById('scoreboard');
+      scoreboard.innerHTML = '';
+      scores.forEach(player => {
+        const div = document.createElement('div');
+        div.className = 'team';
+        div.innerHTML = `
+          <strong>${player.value}</strong>
+          <div class="team-score">Score: ${player.score}</div>
+        `;
+        scoreboard.appendChild(div);
+      });
+    }
+
+    setInterval(loadScores, 2000);
+    loadScores();
+  </script>
+</body>
+</html>
+

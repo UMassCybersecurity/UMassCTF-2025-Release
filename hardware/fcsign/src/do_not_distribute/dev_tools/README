@@ -1,0 +1,57 @@
+
+
+                                                                           
+                                                                      ,--. 
+    ,---,.  ,----..            .--.--.      ,---,  ,----..          ,--.'| 
+  ,'  .' | /   /   \          /  /    '. ,`--.' | /   /   \     ,--,:  : | 
+,---.'   ||   :     :        |  :  /`. / |   :  :|   :     : ,`--.'`|  ' : 
+|   |   .'.   |  ;. /        ;  |  |--`  :   |  '.   |  ;. / |   :  :  | | 
+:   :  :  .   ; /--`         |  :  ;_    |   :  |.   ; /--`  :   |   \ | : 
+:   |  |-,;   | ;             \  \    `. '   '  ;;   | ;  __ |   : '  '; | 
+|   :  ;/||   : |              `----.   \|   |  ||   : |.' .''   ' ;.    ; 
+|   |   .'.   | '___           __ \  \  |'   :  ;.   | '_.' :|   | | \   | 
+'   :  '  '   ; : .'|         /  /`--'  /|   |  ''   ; : \  |'   : |  ; .' 
+|   |  |  '   | '/  :        '--'.     / '   :  |'   | '/  .'|   | '`--'   
+|   :  \  |   :    /           `--'---'  ;   |.' |   :    /  '   : |       
+|   | ,'   \   \ .'                      '---'    \   \ .'   ;   |.'       
+`----'      `---`                                  `---`     '---'         
+                                                                           
+
+
+# FAR CRY SIGNAGE Light Sign Firmware Repository
+
+This repository contains the current development firmware for the **UMassCTF Light Sign** project.
+
+**This firmware is intended for internal development only. And so is repo. Do not allow the repo to be shared publicly. It may contain test routines, insecure configurations, or debug functionality not meant for production deployment.**
+
+---
+
+## Overview
+
+The core firmware logic resides in the `main.c` file.
+
+The new PCB designed around UNC Holdings' new chip, the **UK47XD**, is currently under evaluation. It is designed to support low power and high security from hackers in IoT space. When Paul validated it, development will resume targeting this chip.
+
+---
+
+## Status
+
+- Initial proof-of-concept complete
+- Legacy MCU no longer supported
+- Active development paused pending new hardware integration
+- Security features planned with the new UK47XD MCU
+
+---
+
+## Notes
+
+- **Performance validation:** Paul is responsible for verifying power and signal stability when using the MEAN WELL PSU (model TBD).
+
+MORE
+
+---
+
+## Instructions
+
+TO BE DONE
+

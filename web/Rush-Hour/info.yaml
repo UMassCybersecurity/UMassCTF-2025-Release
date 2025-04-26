@@ -1,0 +1,17 @@
+name: "Rush Hour"
+description: "It's almost rush hour at Papa's Freezeria! Let's start writing those orders down!"
+
+flags:
+  - content: "UMASS{tH3_cl053Rz_@re_n0_m@tcH}"
+
+tags:
+  - web
+  - medium
+
+connection_info: http://ctf.umasscybersec.org:5001
+
+value: 500
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 10

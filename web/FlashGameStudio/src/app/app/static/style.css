@@ -1,0 +1,111 @@
+
+
+body {
+    background: url('background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    /*background-position: center center;*/
+
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar {
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar li {
+    display: inline;
+    list-style-position:inside;
+    border: 2px;
+    border-color: #281efb;
+}
+
+a:link {
+    color: #281efb;
+}
+
+a:visited {
+    color: grey;
+}
+
+.login_form{
+    border: 3px solid #281efb;
+    background-color: white;
+    opacity:.9;
+    color: black;
+    width: 600px;
+    height: 500px;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    font-size: 30px;
+}
+
+.content{
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    opacity: .9;
+    color: black;
+    text-align: center;
+    width: 70%;
+    display:inline-block;
+    padding: 15px;
+    border: 5px solid #281efb;
+}
+
+.game {
+    background: #f8caff;
+    border: 5px solid #281efb;
+    opacity: .9;  
+    margin: 5px;
+}
+
+.games{
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+}
+
+.game_code {
+    text-align: left;
+    background-color: #f8caff;
+    opacity: .8;
+    white-space: pre-wrap;
+    color:black;
+}
+
+input, textarea {
+    background: #f8caff;
+    border-color: #281efb;
+    border-width: 2px;
+    height: 40px;
+    width: 400px;
+    color: black;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.game_form {
+    border: 3px solid #281efb;
+    width: 50%;
+    display: inline-block;
+}
+
+.portrait {
+    border: 3px solid brown;
+}

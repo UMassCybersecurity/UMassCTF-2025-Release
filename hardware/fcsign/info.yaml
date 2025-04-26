@@ -1,0 +1,21 @@
+name: FCSIGN
+
+description: What's up homie, it's Brody. I got one of those decomissioned signs from a motivational facility for something called UMassCTF. You think there's anything cool in here? Got it hooked up in my lab if you want to mess around with it...
+
+flags:
+  - content: UMASS{un(_b3_w1l1n_w1th_s1d3ch4nn3l1n_XT60WWSC}
+
+value: 500
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100
+
+connection_info: Run python client.py with your code. 
+
+hints:
+  - content: This chip is a bit quiet. I wonder if I could get it to talk...
+
+tags:
+  - hard
+  - hardware

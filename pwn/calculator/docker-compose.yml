@@ -1,0 +1,6 @@
+services:
+  challenge:
+    build: .
+    ports:
+      - 9000:4444
+    restart: always

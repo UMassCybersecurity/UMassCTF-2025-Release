@@ -1,0 +1,20 @@
+description:
+  I managed to get this script from a friend.
+  It seems like it uses some sort of integrity check to keep itself from being modified and observed.
+  Do you think you could analyze it and get it to work properly?
+flags: 
+  - content: "UMASS{T3rr1bl3_70_D36ug_H0p3fu11y_W0r53_70_Crack}"
+    type: "static"
+    data: "case_sensitive"
+
+name: "Conundrum"
+
+tags: 
+  - rev
+  - linux
+  - hard
+  
+dynamic:
+  function: logarithmic
+  decay: 100
+  minimum: 100

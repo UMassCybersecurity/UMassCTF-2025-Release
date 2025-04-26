@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block header %}
+{% endblock %}
+
+{% block content %}
+<form id="registerform" method="post" action="/register" method="POST" class="login_form">
+    <h1>Register</h1>
+    <input type="text" name="username" id="username" placeholder="Username" /><br>
+    <input type="password" name="password" id="password" placeholder="Password" /><br>
+    <img onclick="registerform.submit()" onmouseout="this.src=`/static/register_button.png`" onmouseover="this.src=`/static/register_button_hover.png`" width="200px" src="/static/register_button.png"><br>
+    Already have an account? Go <a href="/login">login here!</a>
+</form>
+{% endblock %}

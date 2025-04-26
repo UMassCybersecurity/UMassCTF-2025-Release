@@ -1,0 +1,10 @@
+name: "Welcome Challenge!"
+description: "Welcome to UMassCTF2025! To get the flag, join our Discord server: https://discord.gg/ZpXjaZDQNM"
+
+flags: 
+  - content: "UMASS{W3lc0me_2_uM@sSCTF!!5!}"
+
+value: 50 
+
+tags:
+  - trivial

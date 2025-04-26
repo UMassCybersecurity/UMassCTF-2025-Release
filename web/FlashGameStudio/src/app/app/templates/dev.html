@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block header %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Dev Dashboard</h1>
+    {% if err %}
+        <p style="color: rgb(255,0,0); font-weight: bold;">
+            You are not a developer! Please <a href="/request_access/{{username}}">request access to the early access</a> dev program!
+        </p>
+    {% endif %}
+    <h2>Your Games</h2>
+    <div class="games">
+        {% for game in games %}
+            <div class="game">
+                <h3><a href="/game/{{username}}/{{game[0]}}">{{game[0]}}</a></h3>
+                <p>{{game[1]}}</p>
+            </div>
+        {% endfor %}
+    </div>
+    {% if not err %}
+        <h2>Create a new game!</h2>
+        <form class="game_form" id="game_form" action="/create_game" method="POST">
+            <label for="game_name">Game Name</label><br>
+            <input type="text" id="game_name" name="game_name" placeholder="My Awesome Game"><br>
+            <label for="game_desc">Game Description</label><br>
+            <textarea type="text" id="game_desc" name="game_desc" placeholder="An awesome description for my awesome game"></textarea><br>
+            <img onclick="game_form.submit()" onmouseout="this.src=`/static/create_button.png`" onmouseover="this.src=`/static/create_button_hover.png`" width="100px" src="/static/create_button.png"><br>
+        </form> 
+      {% endif %}
+</div>
+{% endblock %}
